@@ -22,6 +22,8 @@
     
 #First paragraph of the course to conduct char counts with python
 
+import matplotlib.pyplot as plt
+
 pythonpara = '''This Python course is different. It will not only teach you Python, 
 it will give you a problem solving super-power using Python code! 
 And that will make all the difference, especially if you are pursuing a career in data science, 
@@ -33,4 +35,7 @@ for letter in pythonpara:
 
 print(letter_count)
 
-import matplotlib.pyplot as plt
+x,y = zip(*letter_count.items())
+
+plt.bar(x,y)
+plt.show()
