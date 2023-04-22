@@ -35,7 +35,30 @@ for letter in pythonpara:
 
 print(letter_count)
 
-x,y = zip(*letter_count.items())
+# x,y = zip(*letter_count.items())
 
-plt.bar(x,y)
-plt.show()
+# plt.bar(x,y)
+# plt.show()
+
+#this will clean up and only show letter counts
+
+# letter_count_clean = {}
+
+# for k,v in letter_count.items():
+#     if k.isalpha():
+#         letter_count_clean[k] = v
+
+# print(letter_count_clean)
+
+# x,y = zip(*letter_count_clean.items())
+
+# plt.bar(x,y)
+# plt.show()
+
+#this will join the two list together
+
+my_list_1 = [1,2,3,4]
+my_list_2 = ['a','b','c','d']
+
+joined = list(zip(my_list_1,my_list_2))
+print(f'The result of the zip function {joined} it is of type {type(joined)}')
