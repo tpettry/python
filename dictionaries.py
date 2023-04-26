@@ -62,3 +62,14 @@ my_list_2 = ['a','b','c','d']
 
 joined = list(zip(my_list_1,my_list_2))
 print(f'The result of the zip function {joined} it is of type {type(joined)}')
+
+#split option
+
+new_words = pythonpara.split(' ')
+
+print(new_words)
+
+for i in range(len(new_words)):
+    new_words[i] = new_words[i].strip('\n')
+    
+print(new_words)
