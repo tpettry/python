@@ -1,4 +1,5 @@
 #dictionaries lesson
+# list are mutable; dictionaries are mutable; tuples are immutable; strings are immutable
  
 # capitals = {'France':'Paris', 'Spain':'Madrid', 'United Kingdom':'London', 'India':'New Delhi', 'United States':'Washington DC'
 #              ,'Italy':'Rome', 'Denmark':'Copenhagen','Germany':'Berlin','Greece':'Athens','Bulgaria':'Sofia','Ireland':'Dublin'
@@ -73,3 +74,22 @@ for i in range(len(new_words)):
     new_words[i] = new_words[i].strip('\n')
     
 print(new_words)
+
+# more than one demension
+
+my_list = [[1,2,3], [4,5,6],[7,8,9]]
+
+#this would print the first element which is 1,2,3
+print(my_list[0])
+
+#a new dictionary where the first value is a key
+
+countries = {'France':{'Capital':'Paris','Language':'French'}, 'Spain':{'Capital':'Madrid','Language':'Spanish'}}
+#this will print key value pairs based on a key
+print(countries['France'])
+
+for key, value in countries.items():
+    print(key, value)
+
+for key, value in countries.items():
+    print(f'{value["Capital"]} is the capital of {key}, they speak {value["Language"]}')
