@@ -93,3 +93,5 @@ for key, value in countries.items():
 
 for key, value in countries.items():
     print(f'{value["Capital"]} is the capital of {key}, they speak {value["Language"]}')
+    
+    
