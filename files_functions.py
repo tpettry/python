@@ -31,8 +31,28 @@
 
 # read the file by line
 
-f = open('kipling.txt','r')
+# f = open('kipling.txt','r')
 
-print(f.readline())
+# print(f.readline())
 
-f.close()
+# f.close()
+
+## this will append to the file
+# f = open('kipling.txt', 'a')
+
+# f.write('If you can dream - and not make dreams your master; \n\
+#     If you can think - and not make thoughts your aim;\n')
+# f.close()
+# print()
+# f =open('kipling.txt','r')
+# print(f.read())
+# f.close()
+# print()
+
+## This will close the file automatically.  this is the preferred method
+with open('kipling.txt','r') as f:
+    for line in f.readlines():
+        #using end='' will get rid of the space in between the lines 
+        print(line,end='')
+
+ 
