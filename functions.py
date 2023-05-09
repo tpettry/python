@@ -56,3 +56,15 @@ def cal_mean(first, *remainder):
     
     return mean
 print(cal_mean(23,43,56,76,45))
+
+## Functions have the ability to call themselves this is called recursion
+
+def fib_2(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib_2(n-1) + fib_2(n-2)
+
+print(fib_2(10))
