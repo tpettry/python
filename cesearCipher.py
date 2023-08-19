@@ -35,7 +35,9 @@ basker = """I confess at these words a shudder passed through me.
 
 encrypt_basker = encrypt(basker, 10)
 print(encrypt_basker)
+
 # #decrypt
+print(encrypt(encrypt_basker,-10))
 # def decrypt (text, num):
 #     #some function
 
